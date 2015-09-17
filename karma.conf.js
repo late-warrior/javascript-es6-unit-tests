@@ -1,3 +1,5 @@
+var webpackConfig = require('./webpack-config')['basicConfig'];
+
 module.exports = function(config) {
     config.set({
 
@@ -10,17 +12,23 @@ module.exports = function(config) {
         frameworks: ['jasmine'],
 
         preprocessors: {
-            'test-context.js': ['webpack']
+            'test-context.js': ['webpack','coverage']
         },
-
-        webpack: {
-            module: {
-                loaders: [
-                    { test: /\.js/, exclude: /node_modules/, loader: 'babel-loader' }
-                ]
-            },
-            watch: true
+        reporters : ['progress', 'coverage'],
+        // optionally, configure the reporter
+        coverageReporter: {
+          type : 'html',
+          dir : 'coverage/',
+          instrumenterOptions: {
+              istanbul: { noCompact: true }
+          },
         },
-        singleRun : true
+        webpack : webpackConfig,
+        singleRun : true,
+        webpackMiddleware: {
+            // webpack-dev-middleware configuration
+            // i. e.
+            noInfo: false
+        },
     });
 };

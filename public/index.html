@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-git2.min.js"></script>
+        <script src="http://localhost:8080/assets/bundle.js"></script>
+    </head>
+    <body>
+        <p> This is public </p>
+        <div id="message">
+        </div>
+        <div id="jquery-message">
+        </div>
+        <div id="container">
+        </div>
+        <div id='tooltip-info'>
+        </div>
+        <button onclick="doStuff()">
+            Recalibrate version
+        </button>
+    </body>
+    <script>
+        function doStuff() {
+            $("#message").text("Highcharts  " + htv.vers());
+        }
+    </script>
+</html>
