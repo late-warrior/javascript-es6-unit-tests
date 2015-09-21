@@ -15,6 +15,18 @@ gulp.task("build", function() {
     });
 });
 
+gulp.task("commonjs", function() {
+    basicConfig.output.libraryTarget = 'commonjs2';
+    basicConfig.output.filename = 'commonjs-format.js';
+    // run webpack
+    webpack(basicConfig, function(err, stats) {
+        if(err) throw new gutil.PluginError("webpack", err);
+        gutil.log("[webpack]", stats.toString({
+            // output options
+        }));
+    });
+});
+
 /**
  * Run test once and exit
  */

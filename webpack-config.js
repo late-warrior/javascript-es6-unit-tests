@@ -29,11 +29,10 @@ var config = {
     output : {
         path : path.join(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath : '/assets/',
         library : 'htv',
         libraryTarget : 'this'
     },
-    watch: true
+    watch: false
 };
 
 module.exports = {

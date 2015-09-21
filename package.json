@@ -1,7 +1,10 @@
 {
+  "name": "ht-chart",
+  "main": "dist/commonjs-format.js",
   "scripts": {
     "test": "karma start",
-    "start": "webpack-dev-server --config ./webpack-hot-config.js"
+    "start": "webpack-dev-server --config ./webpack-hot-config.js",
+    "postinstall": "gulp commonjs"
   },
   "devDependencies": {
     "babel-loader": "^5.0.0",
