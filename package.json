@@ -1,5 +1,6 @@
 {
   "name": "ht-chart",
+  "version": "0.1.1",
   "main": "dist/commonjs-format.js",
   "scripts": {
     "test": "karma start",
