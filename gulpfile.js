@@ -16,7 +16,7 @@ gulp.task("build", function() {
 });
 
 gulp.task("commonjs", function() {
-    basicConfig.output.libraryTarget = 'commonjs2';
+    basicConfig.output.libraryTarget = 'commonjs';
     basicConfig.output.filename = 'commonjs-format.js';
     // run webpack
     webpack(basicConfig, function(err, stats) {
