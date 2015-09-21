@@ -4,6 +4,6 @@ module.exports = {
     },
 
     htVersion : function() {
-        return 'works oh works -  ' + ht1.version;
+        return 'works oh works -  ' + ht.version;
     }
 }
