@@ -17,9 +17,7 @@ var config = {
     },
     plugins: [
       new webpack.ProvidePlugin({
-        "ht": "ht",
-        "$" : "jquery",
-        "ht1" : "highstock-browserify"
+        "$" : "jquery"
       })
     ],
     // the artifial module "jquery" exports the global var "jQuery"
