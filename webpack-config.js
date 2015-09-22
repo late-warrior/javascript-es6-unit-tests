@@ -21,7 +21,7 @@ var config = {
       })
     ],
     // the artifial module "jquery" exports the global var "jQuery"
-    externals: { jquery: "jQuery" },
+    externals: { jquery: "jQuery", jQuery: "jQuery" },
 
     entry : ['./source/index.js'],
     output : {

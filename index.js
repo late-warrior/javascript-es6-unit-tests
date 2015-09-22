@@ -1,1 +1,2 @@
-require('./dist/commonjs-format');
+//require('./dist/commonjs-format');
+require('./source');
