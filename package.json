@@ -4,8 +4,7 @@
   "main": "dist/commonjs-format",
   "scripts": {
     "test": "karma start",
-    "start": "webpack-dev-server --config ./webpack-hot-config.js",
-    "postinstall": "gulp commonjs"
+    "start": "webpack-dev-server --config ./webpack-hot-config.js"
   },
   "devDependencies": {
     "babel-loader": "^5.0.0",
