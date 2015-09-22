@@ -23,7 +23,7 @@ var config = {
     // the artifial module "jquery" exports the global var "jQuery"
     externals: { jquery: "jQuery", jQuery: "jQuery" },
 
-    entry : ['./source/index.js'],
+    entry : ['./index.js'],
     output : {
         path : path.join(__dirname, 'dist'),
         filename: 'bundle.js',

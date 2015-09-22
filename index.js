@@ -1,2 +1,6 @@
 //require('./dist/commonjs-format');
-require('./source');
+var s = require('./source');
+
+module.exports = {
+    versify : s.vers
+}
